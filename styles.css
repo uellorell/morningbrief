@@ -350,4 +350,13 @@ body p{line-height:1.6}
   .final-actions .text-link{padding-inline:0}
 }
 
+/* Match the product image footprint to the adjacent feature content. */
+@media(min-width:1101px){
+  .product-visual{block-size:442px;min-height:0;aspect-ratio:1}
+  .product-visual>img{object-position:right center}
+}
+@media(min-width:768px) and (max-width:1100px){
+  .product-visual{block-size:auto;min-height:0;aspect-ratio:1}
+}
+
 .hero-notes{grid-template-columns:1fr;gap:8px}
