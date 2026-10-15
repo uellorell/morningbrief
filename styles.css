@@ -335,5 +335,6 @@ body p{line-height:1.6}
   .benefit-item>div{grid-column:auto}
 }
 
-/* Secondary CTAs beside a primary use the outline treatment. */
-.final-actions .text-link{min-height:52px;padding:15px 23px;border:1.5px solid rgba(255,255,255,.82);border-radius:7px;background:transparent;color:#fff;justify-content:center}
+/* Primary CTA groups use one filled treatment. */
+.hero-action .button-secondary{border:0;background:var(--cta-blue);color:#fff}
+.final-actions .text-link{min-height:52px;padding:15px 23px;border:0;border-radius:7px;background:var(--cta-blue);color:#fff;justify-content:center}
