@@ -325,7 +325,7 @@ body p{line-height:1.6}
 
 /* Keep the benefit summary consistent with the framed problem cards. */
 .benefit-list{gap:20px}
-.benefit-item{min-height:190px;padding:26px 24px;border:1px solid #cfdde6;border-radius:12px;background:#fff}
+.benefit-item{min-height:144px;padding:22px 24px;border:1px solid #cfdde6;border-radius:12px;background:#fff}
 .benefit-number{margin:0 0 20px}
 .benefit-item h3{margin:0 0 9px}
 .benefit-item p{margin:0}
