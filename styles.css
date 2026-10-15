@@ -337,4 +337,4 @@ body p{line-height:1.6}
 
 /* Primary CTA groups use one filled treatment. */
 .hero-action .button-secondary{border:0;background:rgba(248,248,246,.7);color:var(--cta-blue)}
-.final-actions .text-link{min-height:52px;padding:15px 23px;border:0;border-radius:7px;background:var(--cta-blue);color:#fff;justify-content:center}
+.final-actions .text-link{min-height:52px;padding:15px 23px;border:0;border-radius:7px;background:transparent;color:#fff;justify-content:center}
