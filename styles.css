@@ -334,3 +334,7 @@ body p{line-height:1.6}
   .benefit-item{display:block;min-height:0;padding:20px}
   .benefit-item>div{grid-column:auto}
 }
+
+/* Use one filled treatment for every primary and adjacent CTA. */
+.hero-action .button-secondary{border:0;background:var(--cta-blue);color:#fff}
+.final-actions .text-link{min-height:52px;padding:15px 23px;border-radius:7px;background:var(--cta-blue);color:#fff;justify-content:center}
