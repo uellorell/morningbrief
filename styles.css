@@ -360,3 +360,13 @@ body p{line-height:1.6}
 }
 
 .hero-notes{grid-template-columns:1fr;gap:8px}
+
+/* Closing CTA: use the MorningBrief editorial cover as the focal artwork. */
+.final-cta{background:radial-gradient(circle at 78% 45%,#174d78 0%,#0d3456 34%,#081e37 76%)}
+.final-cta:before,.final-disc,.final-spark,.final-cover:after,.final-cover>*{display:none}
+.final-art{min-height:400px}
+.final-cover{width:400px;height:400px;padding:0;transform:none;border-radius:16px;background:#0b2f55 url('morningbrief-cover-v2.png') center/cover no-repeat;box-shadow:0 24px 48px rgba(0,10,26,.3)}
+@media(max-width:767px){
+  .final-art{min-height:0}
+  .final-cover{width:min(100%,360px);height:auto;aspect-ratio:1}
+}
