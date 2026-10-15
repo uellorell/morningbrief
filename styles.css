@@ -344,3 +344,5 @@ body p{line-height:1.6}
   .final-actions .button-light{padding-inline:16px}
   .final-actions .text-link{padding-inline:0}
 }
+
+.hero-notes{grid-template-columns:1fr;gap:8px}
