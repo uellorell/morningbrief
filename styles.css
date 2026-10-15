@@ -310,3 +310,15 @@ body p{line-height:1.6}
 @media(max-width:500px){
   .product-visual{min-height:480px}
 }
+
+/* Frame the editorial problem list without ordinal labels. */
+.problem-grid{gap:16px}
+.problem-card{display:block;min-height:0;padding:22px 24px;border:1px solid #cfdde6;border-radius:12px;background:#fff}
+.problem-card h3{margin:0 0 7px;font-size:20px;line-height:1.25}
+.problem-card p{margin:0;max-width:none}
+@media(max-width:767px){
+  .problem-grid{gap:12px}
+  .problem-card{display:block;padding:20px}
+  .problem-card h3{margin:0 0 6px;font-size:19px}
+  .problem-card p{margin:0}
+}
