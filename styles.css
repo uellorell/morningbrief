@@ -331,6 +331,6 @@ body p{line-height:1.6}
 .benefit-item p{margin:0}
 @media(max-width:767px){
   .benefit-list{gap:12px}
-  .benefit-item{min-height:0;padding:20px}
-  .benefit-number{margin:0}
+  .benefit-item{display:block;min-height:0;padding:20px}
+  .benefit-item>div{grid-column:auto}
 }
