@@ -363,16 +363,17 @@ body p{line-height:1.6}
 
 /* Blend the hero copy into the navy artwork with one continuous blue palette. */
 @media (min-width:1101px){
-  .hero{background:#dbeaf6}
+  .hero{background:#d7e6f1}
   .hero::after{
     background:linear-gradient(90deg,
-      #dbeaf6 0%,
-      #dbeaf6 30%,
-      rgba(205,226,242,.98) 38%,
-      rgba(153,190,219,.88) 47%,
-      rgba(78,127,172,.58) 57%,
-      rgba(13,48,85,.18) 66%,
-      rgba(9,30,56,0) 73%)
+      #d7e6f1 0%,
+      #cfdfeb 27%,
+      rgba(184,207,225,.98) 36%,
+      rgba(129,165,195,.92) 46%,
+      rgba(72,112,151,.78) 55%,
+      rgba(30,70,111,.56) 63%,
+      rgba(10,38,70,.22) 70%,
+      rgba(6,25,48,0) 77%)
   }
 }
 
@@ -388,7 +389,7 @@ body p{line-height:1.6}
 }
 
 @media (max-width:1100px){
-  .hero{background:linear-gradient(180deg,#dbeaf6 0%,#c7deef 100%)}
+  .hero{background:linear-gradient(180deg,#d7e6f1 0%,#b9d1e3 100%)}
 }
 
 /* Closing CTA: use the MorningBrief editorial cover as the focal artwork. */
