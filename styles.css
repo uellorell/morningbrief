@@ -407,3 +407,7 @@ body p{line-height:1.6}
   .final-art{min-height:0}
   .final-cover{width:min(100%,360px);height:auto;aspect-ratio:1}
 }
+
+/* This message applies throughout the day, so keep the section free from morning-specific imagery and timing. */
+.daily-visual,.daily .routine{display:none}
+.daily .trust{margin-top:40px}
