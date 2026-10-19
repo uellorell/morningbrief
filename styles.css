@@ -323,15 +323,15 @@ body p{line-height:1.6}
   .problem-card p{margin:0}
 }
 
-/* Keep the benefit summary consistent with the framed problem cards. */
-.benefit-list{gap:20px}
-.benefit-item{min-height:144px;padding:22px 24px;border:1px solid #cfdde6;border-radius:12px;background:#fff}
+/* Keep the benefit summary light and open without card frames. */
+.benefit-list{gap:40px}
+.benefit-item{min-height:0;padding:0;border:0;border-radius:0;background:transparent}
 .benefit-number{margin:0 0 20px}
 .benefit-item h3{margin:0 0 9px}
 .benefit-item p{margin:0}
 @media(max-width:767px){
-  .benefit-list{gap:12px}
-  .benefit-item{display:block;min-height:0;padding:20px}
+  .benefit-list{gap:24px}
+  .benefit-item{display:block;min-height:0;padding:0}
   .benefit-item>div{grid-column:auto}
 }
 
