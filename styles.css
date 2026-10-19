@@ -384,7 +384,7 @@ body p{line-height:1.6}
 .hero .eyebrow{color:#315878}
 .hero h1{color:#08233e}
 .hero h1 span{color:#0b4d8c}
-.hero-lead{color:#405f78}
+.hero-lead{max-width:480px;color:#405f78}
 .hero-notes{color:#365772}
 .hero-action .button-secondary{
   background:rgba(219,234,246,.78);
@@ -418,6 +418,8 @@ body p{line-height:1.6}
 .product-grid{grid-template-columns:minmax(0,820px);justify-content:center}
 .product-copy{grid-column:auto;grid-row:auto}
 .product-copy>.section-kicker,.product-copy>h2{text-align:center}
+.product-copy>h2{margin-inline:auto}
+.product-copy>.product-lead{margin-inline:auto;text-align:center}
 .daily-layout{display:grid;grid-template-columns:minmax(0,1fr) 442px;gap:72px;align-items:center}
 .daily-product-visual{width:442px;aspect-ratio:1;margin:0;overflow:visible;background:transparent;justify-self:end}
 .daily-product-visual img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 28px 30px rgba(8,35,65,.22)) drop-shadow(0 8px 12px rgba(8,35,65,.12))}
