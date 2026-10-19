@@ -415,7 +415,7 @@ body p{line-height:1.6}
 .daily .trust{margin-top:40px}
 
 /* Place the MorningBrief product cutout beside the time-neutral routine copy. */
-.product-grid{grid-template-columns:minmax(0,820px);justify-content:start}
+.product-grid{grid-template-columns:minmax(0,820px);justify-content:center}
 .product-copy{grid-column:auto;grid-row:auto}
 .daily-layout{display:grid;grid-template-columns:minmax(0,1fr) 442px;gap:72px;align-items:center}
 .daily-product-visual{width:442px;aspect-ratio:1;margin:0;overflow:visible;background:transparent;justify-self:end}
