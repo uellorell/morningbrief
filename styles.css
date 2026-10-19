@@ -413,3 +413,19 @@ body p{line-height:1.6}
 .daily-header{display:block}
 .daily-header>p{max-width:640px;margin:20px 0 0}
 .daily .trust{margin-top:40px}
+
+/* Place the MorningBrief product scene beside the time-neutral routine copy. */
+.product-grid{grid-template-columns:minmax(0,820px);justify-content:start}
+.product-copy{grid-column:auto;grid-row:auto}
+.daily-layout{display:grid;grid-template-columns:minmax(0,1fr) 442px;gap:72px;align-items:center}
+.daily-product-visual{width:442px;aspect-ratio:1;margin:0;overflow:visible;background:transparent;justify-self:end}
+.daily-product-visual img{display:block;width:100%;height:100%;object-fit:contain}
+.daily .trust{margin-top:36px}
+@media(min-width:768px) and (max-width:1100px){
+  .daily-layout{grid-template-columns:minmax(0,1fr) minmax(330px,42vw);gap:40px}
+  .daily-product-visual{width:100%}
+}
+@media(max-width:767px){
+  .daily-layout{grid-template-columns:1fr;gap:34px}
+  .daily-product-visual{width:100%;max-width:520px;justify-self:start}
+}
