@@ -410,4 +410,6 @@ body p{line-height:1.6}
 
 /* This message applies throughout the day, so keep the section free from morning-specific imagery and timing. */
 .daily-visual,.daily .routine{display:none}
+.daily-header{display:block}
+.daily-header>p{max-width:640px;margin:20px 0 0}
 .daily .trust{margin-top:40px}
