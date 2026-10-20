@@ -437,3 +437,8 @@ body p{line-height:1.6}
 *,
 *::before,
 *::after{font-family:Inter,Arial,Helvetica,sans-serif!important}
+
+/* Keep editorial labels legible and consistent across sections. */
+.eyebrow,
+.section-kicker,
+.trust .section-kicker{font-size:14px}
