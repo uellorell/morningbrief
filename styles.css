@@ -432,3 +432,8 @@ body p{line-height:1.6}
   .daily-layout{grid-template-columns:1fr;gap:34px}
   .daily-product-visual{width:100%;max-width:520px;justify-self:start}
 }
+
+/* Use one typeface across all content and editorial accents. */
+*,
+*::before,
+*::after{font-family:Inter,Arial,Helvetica,sans-serif!important}
