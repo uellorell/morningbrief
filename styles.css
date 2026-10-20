@@ -443,3 +443,38 @@ body p{line-height:1.6}
 .section-kicker,
 .trust .section-kicker{font-size:14px;font-weight:800;letter-spacing:.1em}
 .hero .eyebrow{letter-spacing:.1em}
+
+/* On phones, place the campaign visual directly after the CTA and blend it into the page. */
+@media(max-width:767px){
+  .hero-grid,
+  .hero-content,
+  .hero-copy{display:contents}
+  .hero .eyebrow,
+  .hero h1,
+  .hero-lead,
+  .hero-action,
+  .hero-notes{width:calc(100% - 48px);margin-inline:auto}
+  .hero .eyebrow{order:1;margin-top:58px}
+  .hero h1{order:2}
+  .hero-lead{order:3}
+  .hero-action{order:4}
+  .hero-visual{order:5;width:100%;height:clamp(360px,100vw,520px);margin-top:34px}
+  .hero-visual::after{
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:1;
+    inset:0;
+    background:linear-gradient(180deg,#f8f8f6 0%,rgba(248,248,246,.45) 13%,rgba(248,248,246,0) 31%,rgba(248,248,246,0) 72%,rgba(248,248,246,.48) 90%,#f8f8f6 100%);
+    pointer-events:none
+  }
+  .hero-notes{order:6;margin-top:24px;margin-bottom:44px}
+}
+@media(max-width:600px){
+  .hero .eyebrow,
+  .hero h1,
+  .hero-lead,
+  .hero-action,
+  .hero-notes{width:calc(100% - 40px)}
+  .hero .eyebrow{margin-top:40px}
+}
