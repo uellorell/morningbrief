@@ -441,4 +441,5 @@ body p{line-height:1.6}
 /* Keep editorial labels legible and consistent across sections. */
 .eyebrow,
 .section-kicker,
-.trust .section-kicker{font-size:14px;font-weight:800}
+.trust .section-kicker{font-size:14px;font-weight:800;letter-spacing:.1em}
+.hero .eyebrow{letter-spacing:.1em}
