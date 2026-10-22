@@ -478,3 +478,142 @@ body p{line-height:1.6}
   .hero-notes{width:calc(100% - 40px)}
   .hero .eyebrow{margin-top:40px}
 }
+
+/* Alternative colour direction: sky, mint, and warm sunrise yellow. */
+:root{
+  --tone-sky:#56b9e2;
+  --tone-sky-deep:#287fae;
+  --tone-mint:#a7d9bb;
+  --tone-mint-pale:#edf8f1;
+  --tone-sun:#fff06a;
+  --tone-ink:#123b57;
+  --tone-muted:#54758a;
+  --tone-line:#bddbd2;
+  --mb-primary:var(--tone-sky-deep);
+  --mb-dark:var(--tone-ink);
+  --mb-deep:#0f4c70;
+  --mb-accent:var(--tone-sun);
+  --mb-background:#f7fcf9;
+  --mb-surface:#fffef7;
+  --mb-text:var(--tone-ink);
+  --mb-muted:var(--tone-muted);
+  --mb-border:var(--tone-line)
+}
+body{background:var(--tone-mint-pale);color:var(--tone-ink)}
+.why{background:#f7fcf9}
+.benefits{background:#e0f3f2}
+.daily{background:#eff9f3}
+.product{background:#fffdf1}
+.section h2,.problem-card h3,.benefit-item h3,.feature h3,.trust h3{color:var(--tone-ink)}
+.section-intro>p,.problem-card p,.benefits-heading>p:last-child,.benefit-item p,.product-lead,.feature p,.daily-header>p,.trust p:last-child{color:var(--tone-muted)}
+.eyebrow,.section-kicker,.trust .section-kicker{color:var(--tone-sky-deep)}
+.problem-card{border-color:var(--tone-line);background:#fffef9}
+.feature-icon{color:var(--tone-sky-deep)}
+.button-primary,.button-dark{background:var(--tone-sun);color:var(--tone-ink)}
+.hero-action .button-primary{background:var(--tone-sun);color:var(--tone-ink)}
+.button-light{background:var(--tone-sun);color:var(--tone-ink)}
+.hero{background:var(--tone-sky)}
+@media(min-width:1101px){
+  .hero::after{background:linear-gradient(90deg,#56b9e2 0%,#78c9df 35%,#a7d9bb 45%,rgba(167,217,187,.86) 49%,rgba(167,217,187,0) 53%)}
+}
+.hero .eyebrow{color:#225c78}
+.hero h1{color:var(--tone-ink)}
+.hero h1 span{color:var(--tone-sky-deep)}
+.hero-lead,.hero-notes{color:#355d74}
+.hero-notes span+span{border-color:#a5cdc5}
+.daily-product-visual img{filter:drop-shadow(0 28px 30px rgba(18,59,87,.2)) drop-shadow(0 8px 12px rgba(18,59,87,.1))}
+.final-cta{background:radial-gradient(circle at 78% 42%,#2c8fbd 0%,#176a99 37%,#104c72 76%)}
+.final-copy .section-kicker{color:var(--tone-sun)}
+.final-copy>p:not(.section-kicker){color:#d8edf0}
+.final-actions .text-link{color:#fff}
+@media(max-width:1100px){
+  .hero{background:linear-gradient(180deg,#dff4ec 0%,#9bd7d1 48%,var(--tone-sky) 100%)}
+}
+@media(max-width:767px){
+  .hero-visual::after{display:none}
+}
+
+/* Remove the remaining navy treatment in favour of the light sky-and-mint direction. */
+:root{
+  --tone-ink:#245d61;
+  --tone-muted:#52777a;
+  --mb-deep:#438f96
+}
+.hero-visual::before{
+  content:"";
+  position:absolute;
+  z-index:1;
+  inset:0;
+  display:none;
+  pointer-events:none
+}
+.hero-visual img{filter:none}
+.final-cta{background:linear-gradient(132deg,#58b9e2 0%,#78c9df 43%,#a7d9bb 100%);color:var(--tone-ink)}
+.final-cta:before{border-color:rgba(36,93,97,.14);box-shadow:0 0 0 75px rgba(255,240,106,.13),0 0 0 155px rgba(255,240,106,.08)}
+.final-copy .section-kicker{color:#287fae}
+.final-copy h2{color:var(--tone-ink)}
+.final-copy>p:not(.section-kicker){color:#356c70}
+.final-actions .text-link{color:var(--tone-ink)}
+.final-actions .text-link span{border-color:#5b9ea3}
+
+/* Keep the hero typography unified against the new sky-and-mint background. */
+.hero .eyebrow{color:#17566d}
+.hero h1,
+.hero h1 span{color:#164f58}
+.hero-lead,
+.hero-notes{color:#285a62;font-weight:500}
+
+/* Frame the new 4:3 campaign artwork on the right without covering the hero copy. */
+@media(min-width:1101px){
+  .hero-visual{
+    inset:0 0 0 38%;
+    width:auto;
+    height:100%
+  }
+  .hero-visual img{
+    object-fit:cover;
+    object-position:center center
+  }
+  .hero::after{
+    background:linear-gradient(90deg,
+      #56b9e2 0%,
+      #62bfdf 27%,
+      #80ced7 34%,
+      #9bd8c6 41%,
+      rgba(167,217,187,.94) 46%,
+      rgba(167,217,187,.68) 51%,
+      rgba(167,217,187,.3) 57%,
+      rgba(167,217,187,0) 63%)
+  }
+}
+@media(max-width:1100px){
+  .hero-visual{
+    width:100%;
+    height:auto;
+    aspect-ratio:4/3
+  }
+  .hero-visual img{
+    object-fit:cover;
+    object-position:center center
+  }
+}
+
+/* Use one light treatment for the hero copy over the vivid campaign palette. */
+.hero .eyebrow,
+.hero h1,
+.hero h1 span,
+.hero-lead{
+  color:#fff;
+  text-shadow:0 2px 18px rgba(18,79,88,.18)
+}
+.hero-lead{max-width:430px}
+
+/* Keep the PLUS message crisp against the sky-to-mint gradient. */
+.final-copy .section-kicker,
+.final-copy h2{
+  color:#fff
+}
+.final-copy>p:not(.section-kicker){
+  color:#fff;
+  font-weight:500
+}
