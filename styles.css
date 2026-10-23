@@ -624,14 +624,14 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
 @media(max-width:767px){
   .hero-spacer{
     display:block;
-    order:7;
+    order:6;
     width:calc(100% - 48px);
     height:48px;
     margin:24px auto 44px
   }
   .hero-action{
-    order:6;
-    margin-top:24px
+    order:4;
+    margin-top:0
   }
   .hero-visual{
     order:5;
