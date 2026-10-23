@@ -643,14 +643,21 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
     display:block;
     position:absolute;
     z-index:1;
-    inset:-1px 0;
-    background:linear-gradient(180deg,
-      #9bd7d1 0%,
-      rgba(155,215,209,.82) 5%,
-      rgba(155,215,209,0) 18%,
-      rgba(86,185,226,0) 80%,
-      rgba(86,185,226,.7) 94%,
-      #56b9e2 100%);
+    inset:-2px 0;
+    background:
+      linear-gradient(180deg,
+        #9bd8c6 0%,
+        rgba(155,216,198,.98) 8%,
+        rgba(155,216,198,.82) 15%,
+        rgba(155,216,198,.52) 23%,
+        rgba(155,216,198,.22) 31%,
+        rgba(155,216,198,0) 40%),
+      linear-gradient(0deg,
+        #56b9e2 0%,
+        rgba(86,185,226,.94) 7%,
+        rgba(86,185,226,.7) 13%,
+        rgba(86,185,226,.38) 19%,
+        rgba(86,185,226,0) 27%);
     pointer-events:none
   }
 }
