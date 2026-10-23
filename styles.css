@@ -527,7 +527,7 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
 .final-copy>p:not(.section-kicker){color:#d8edf0}
 .final-actions .text-link{color:#fff}
 @media(max-width:1100px){
-  .hero{background:linear-gradient(180deg,#dff4ec 0%,#9bd7d1 48%,var(--tone-sky) 100%)}
+  .hero{background:linear-gradient(180deg,#56b9e2 0%,#62bfdf 30%,#80ced7 46%,#9bd8c6 58%,#a7d9bb 68%,#56b9e2 100%)}
 }
 @media(max-width:767px){
   .hero-visual::after{display:none}
@@ -618,8 +618,17 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
   font-weight:500
 }
 
+.hero-spacer{display:none}
+
 /* Blend the mobile artwork into the surrounding mint and sky backgrounds. */
 @media(max-width:767px){
+  .hero-spacer{
+    display:block;
+    order:6;
+    width:calc(100% - 48px);
+    height:48px;
+    margin:24px auto 44px
+  }
   .hero-visual{
     background:transparent;
     overflow:hidden
@@ -639,4 +648,7 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
       #56b9e2 100%);
     pointer-events:none
   }
+}
+@media(max-width:600px){
+  .hero-spacer{width:calc(100% - 40px)}
 }
