@@ -617,3 +617,26 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
   color:#fff;
   font-weight:500
 }
+
+/* Blend the mobile artwork into the surrounding mint and sky backgrounds. */
+@media(max-width:767px){
+  .hero-visual{
+    background:transparent;
+    overflow:hidden
+  }
+  .hero-visual::after{
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:1;
+    inset:-1px 0;
+    background:linear-gradient(180deg,
+      #9bd7d1 0%,
+      rgba(155,215,209,.82) 5%,
+      rgba(155,215,209,0) 18%,
+      rgba(86,185,226,0) 80%,
+      rgba(86,185,226,.7) 94%,
+      #56b9e2 100%);
+    pointer-events:none
+  }
+}
