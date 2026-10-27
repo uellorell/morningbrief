@@ -822,7 +822,7 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
   position:relative;
   display:block;
   width:100%;
-  max-width:470px;
+  max-width:440px;
   min-height:0;
   margin:0;
   justify-self:end
