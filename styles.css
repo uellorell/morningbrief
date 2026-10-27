@@ -813,7 +813,7 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
 
 /* Final CTA: balance the subscription message with a product illustration. */
 .final-grid{
-  grid-template-columns:minmax(0,1fr) minmax(360px,520px);
+  grid-template-columns:minmax(0,1fr) minmax(340px,470px);
   gap:56px;
   align-items:center
 }
@@ -822,7 +822,7 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
   position:relative;
   display:block;
   width:100%;
-  max-width:520px;
+  max-width:470px;
   min-height:0;
   margin:0;
   justify-self:end
