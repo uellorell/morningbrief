@@ -861,3 +861,9 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
     justify-self:center
   }
 }
+
+/* Editorial body copy stays neutral; hero and final CTA retain their contrast treatment. */
+main > section:not(.hero):not(.final-cta),
+main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
+  color:#171717
+}
