@@ -998,6 +998,9 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 }
 
 /* Hero shares the final CTA's sky-to-mint treatment and product illustration. */
+:root{--product-illustration-size:440px}
+.hero-visual,
+.final-art.final-product-visual{max-width:var(--product-illustration-size)}
 .hero{
   min-height:0;
   background:linear-gradient(132deg,#58b9e2 0%,#78c9df 43%,#a7d9bb 100%)
@@ -1036,7 +1039,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
   inset:auto;
   display:block;
   width:100%;
-  max-width:440px;
+  max-width:var(--product-illustration-size);
   height:auto;
   aspect-ratio:1242/800;
   margin:0;
@@ -1102,7 +1105,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
   .hero-visual{
     grid-column:1;
     grid-row:2;
-    width:min(100%,440px);
+    width:min(100%,var(--product-illustration-size));
     height:auto;
     aspect-ratio:1242/800;
     margin:0;
