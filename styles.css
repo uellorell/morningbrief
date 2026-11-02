@@ -1125,9 +1125,9 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 .final-cta::before{display:none}
 .final-cta .final-grid{
   display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
-  gap:48px;
-  align-items:center;
+  grid-template-columns:1fr;
+  gap:30px;
+  align-items:initial;
   width:min(var(--container),calc(100% - 48px));
   margin-inline:auto;
   padding:54px 48px 56px;
@@ -1138,7 +1138,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 .final-cta .final-copy{max-width:620px}
 .final-cta .final-copy>p:not(.section-kicker),
 .final-cta .final-trust{max-width:none}
-.final-cta .final-actions{align-self:start;justify-content:flex-end}
+.final-cta .final-actions{justify-content:center}
 @media(max-width:767px){
   .final-cta{padding:56px 0}
   .final-cta .final-grid{
@@ -1148,7 +1148,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
     grid-template-columns:1fr;
     gap:28px
   }
-  .final-cta .final-actions{justify-content:flex-start}
+  .final-cta .final-actions{justify-content:center}
 }
 @media(max-width:420px){
   .final-cta .final-grid{padding:34px 24px 36px}
