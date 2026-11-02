@@ -875,7 +875,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
   display:grid;
   grid-template-columns:minmax(0,1fr) minmax(360px,470px);
   gap:74px;
-  align-items:center;
+  align-items:start;
   justify-content:normal
 }
 .product-experience .product-copy{max-width:590px}
@@ -1119,28 +1119,82 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 /* Compact final CTA card after removing the supporting artwork. */
 .final-cta{
   padding:80px 0;
-  background:#f8f8f6;
+  background:#eff9f3;
   color:#fff
 }
 .final-cta::before{display:none}
 .final-cta .final-grid{
-  display:block;
-  width:min(760px,calc(100% - 48px));
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:48px;
+  align-items:center;
+  width:min(var(--container),calc(100% - 48px));
   margin-inline:auto;
-  padding:58px 62px 60px;
+  padding:54px 48px 56px;
   border-radius:24px;
   background:linear-gradient(132deg,#58b9e2 0%,#78c9df 43%,#a7d9bb 100%);
   box-shadow:0 24px 54px rgba(18,59,87,.14)
 }
 .final-cta .final-copy{max-width:620px}
+.final-cta .final-copy>p:not(.section-kicker),
+.final-cta .final-trust{max-width:none}
+.final-cta .final-actions{align-self:start;justify-content:flex-end}
 @media(max-width:767px){
   .final-cta{padding:56px 0}
   .final-cta .final-grid{
     width:calc(100% - 40px);
     padding:40px 30px 42px;
-    border-radius:20px
+    border-radius:20px;
+    grid-template-columns:1fr;
+    gap:28px
   }
+  .final-cta .final-actions{justify-content:flex-start}
 }
 @media(max-width:420px){
   .final-cta .final-grid{padding:34px 24px 36px}
 }
+
+/* A short problem frame gives the product promise context before the preview. */
+.information-challenge{background:#fffdf1}
+.challenge-intro{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+  gap:80px;
+  align-items:end
+}
+.challenge-intro h2{max-width:650px;margin:0}
+.challenge-intro>p{max-width:430px;margin:0;font-size:17px;line-height:1.65}
+.challenge-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+  margin-top:48px
+}
+.challenge-item{
+  display:block;
+  min-height:188px;
+  padding:28px 26px;
+  border:1px solid #dce6df;
+  border-radius:16px;
+  background:rgba(255,255,255,.58)
+}
+.challenge-item>span{display:block;margin-bottom:26px;color:#2181a7;font-size:13px;font-weight:700}
+.challenge-item h3{margin:0 0 8px;font-size:19px;line-height:1.25}
+.challenge-item p{margin:0;font-size:15px;line-height:1.55}
+@media(max-width:767px){
+  .challenge-intro{grid-template-columns:1fr;gap:18px}
+  .challenge-intro>p{max-width:540px;font-size:16px}
+  .challenge-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:36px}
+  .challenge-item{min-height:0;padding:18px 14px;border:1px solid #dce6df;border-radius:13px}
+  .challenge-item>span{margin-bottom:17px;font-size:12px}
+  .challenge-item h3{font-size:16px;line-height:1.24}
+  .challenge-item p{font-size:14px;line-height:1.45}
+}
+
+/* The product message stays focused once the hero carries the visual preview. */
+.product-experience-grid{grid-template-columns:1fr;gap:0}
+.product-experience .product-copy{max-width:660px;margin-inline:auto;text-align:center}
+.product-experience .product-copy>h2,
+.product-experience .product-copy>.product-lead{margin-inline:auto;text-align:center}
+.product-experience .feature-list{margin-inline:auto;text-align:left}
+.hero-action .experience-play{margin-bottom:0}
