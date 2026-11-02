@@ -1208,5 +1208,12 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 @media(max-width:500px){
   .product-experience .feature-list{grid-template-columns:1fr}
 }
+@media(max-width:767px){
+  .product-experience .feature-list{
+    max-width:460px;
+    grid-template-columns:1fr;
+    gap:26px
+  }
+}
 .hero-action .experience-play,
 .hero-action .experience-play:hover{margin-bottom:0;box-shadow:none}
