@@ -586,6 +586,7 @@ body{background:var(--tone-mint-pale);color:var(--tone-ink)}
       rgba(167,217,187,0) 63%)
   }
 }
+
 @media(max-width:1100px){
   .hero-visual{
     width:100%;
@@ -998,8 +999,10 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 }
 
 /* Hero shares the final CTA's sky-to-mint treatment and product illustration. */
-:root{--product-illustration-size:440px}
-.hero-visual,
+:root{
+  --hero-illustration-size:480px;
+  --product-illustration-size:440px
+}
 .final-art.final-product-visual{max-width:var(--product-illustration-size)}
 .hero{
   min-height:0;
@@ -1009,7 +1012,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 .hero-grid{
   position:relative;
   display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(340px,470px);
+  grid-template-columns:minmax(0,1fr) minmax(360px,500px);
   gap:56px;
   min-height:680px;
   padding:90px 0;
@@ -1039,7 +1042,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
   inset:auto;
   display:block;
   width:100%;
-  max-width:var(--product-illustration-size);
+  max-width:var(--hero-illustration-size);
   height:auto;
   aspect-ratio:1242/800;
   margin:0;
@@ -1105,10 +1108,39 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
   .hero-visual{
     grid-column:1;
     grid-row:2;
-    width:min(100%,var(--product-illustration-size));
+    width:min(100%,var(--hero-illustration-size));
     height:auto;
     aspect-ratio:1242/800;
     margin:0;
     justify-self:center
   }
+}
+
+/* Compact final CTA card after removing the supporting artwork. */
+.final-cta{
+  padding:80px 0;
+  background:#f8f8f6;
+  color:#fff
+}
+.final-cta::before{display:none}
+.final-cta .final-grid{
+  display:block;
+  width:min(760px,calc(100% - 48px));
+  margin-inline:auto;
+  padding:58px 62px 60px;
+  border-radius:24px;
+  background:linear-gradient(132deg,#58b9e2 0%,#78c9df 43%,#a7d9bb 100%);
+  box-shadow:0 24px 54px rgba(18,59,87,.14)
+}
+.final-cta .final-copy{max-width:620px}
+@media(max-width:767px){
+  .final-cta{padding:56px 0}
+  .final-cta .final-grid{
+    width:calc(100% - 40px);
+    padding:40px 30px 42px;
+    border-radius:20px
+  }
+}
+@media(max-width:420px){
+  .final-cta .final-grid{padding:34px 24px 36px}
 }
