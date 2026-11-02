@@ -1207,6 +1207,14 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 .product-experience .product-copy{max-width:660px;margin-inline:auto;text-align:center}
 .product-experience .product-copy>h2,
 .product-experience .product-copy>.product-lead{margin-inline:auto;text-align:center}
-.product-experience .feature-list{margin-inline:auto;text-align:left}
+.product-experience .feature-list{
+  max-width:720px;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  margin-inline:auto;
+  text-align:left
+}
+@media(max-width:500px){
+  .product-experience .feature-list{grid-template-columns:1fr}
+}
 .hero-action .experience-play,
 .hero-action .experience-play:hover{margin-bottom:0;box-shadow:none}
