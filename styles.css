@@ -1160,7 +1160,7 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
 }
 
 /* A short problem frame gives the product promise context before the preview. */
-.information-challenge{background:#fffdf1}
+.information-challenge{background:#eff9f3}
 .challenge-intro{
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
