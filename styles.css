@@ -1145,18 +1145,18 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
     width:calc(100% - 40px);
     padding:40px 30px 42px;
     border-radius:20px;
-    grid-template-columns:minmax(0,1fr) minmax(160px,38%);
-    gap:16px
+    grid-template-columns:1fr;
+    gap:28px
   }
-  .final-cta .final-actions{width:100%;justify-content:flex-end}
-  .final-cta .final-actions .button{width:100%;min-height:60px;padding-inline:12px;white-space:normal;text-align:center}
+  .final-cta .final-actions{width:auto;align-self:auto;justify-content:center}
+  .final-cta .final-actions .button{width:auto;min-height:52px;padding-inline:23px;white-space:nowrap;text-align:center}
 }
 @media(max-width:420px){
   .final-cta .final-grid{padding:34px 24px 36px}
 }
 @media(max-width:500px){
   .final-cta .final-actions{flex-direction:row}
-  .final-cta .final-actions .button{width:100%}
+  .final-cta .final-actions .button{width:auto}
 }
 
 /* A short problem frame gives the product promise context before the preview. */
