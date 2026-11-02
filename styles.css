@@ -1183,13 +1183,6 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
   border-radius:16px;
   background:rgba(255,255,255,.58)
 }
-.challenge-item>span{
-  display:block;
-  margin-bottom:26px;
-  color:#2181a7;
-  font-size:13px;
-  font-weight:700
-}
 .challenge-item h3{margin:0 0 8px;font-size:19px;line-height:1.25}
 .challenge-item p{margin:0;font-size:15px;line-height:1.55}
 @media(max-width:767px){
@@ -1197,7 +1190,6 @@ main > section:not(.hero):not(.final-cta) :is(h1,h2,h3,p,strong,span,a){
   .challenge-intro>p{max-width:540px;font-size:16px}
   .challenge-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:36px}
   .challenge-item{min-height:0;padding:18px 14px;border:1px solid #dce6df;border-radius:13px}
-  .challenge-item>span{margin-bottom:17px;font-size:12px}
   .challenge-item h3{font-size:16px;line-height:1.24}
   .challenge-item p{font-size:14px;line-height:1.45}
 }
