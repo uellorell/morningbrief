@@ -1287,7 +1287,7 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;color:#2a2a2a}
   .product-experience .feature-icon{flex-basis:40px;width:40px;height:40px;margin:0}
   .daily-simple{padding:80px 0 0}
   .daily-simple .daily-layout{grid-template-columns:1fr;gap:36px}
-  .daily-simple .daily-product-visual{justify-self:center}
+  .daily-simple .daily-product-visual{justify-self:center;overflow:visible;padding-bottom:48px}
   .final-cta{padding:56px 0 80px}
   .final-cta .final-grid{width:calc(100% - 40px);grid-template-columns:1fr;min-height:0;padding:32px 28px;gap:28px;text-align:left}
   .final-cta .final-copy h2{font-size:30px}
