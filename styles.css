@@ -1280,6 +1280,7 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;color:#2a2a2a}
   .hero-grid{grid-template-columns:1fr;gap:38px;min-height:0;padding:64px 0 70px}
   .hero h1{font-size:38px;line-height:1.18}
   .hero h1 .hero-dengan{display:block}
+  .hero h1 .hero-title-break{display:inline}
   .hero-price strong{font-size:32px;line-height:42px;letter-spacing:-.96px}
   .hero-action{width:100%}
   .hero .experience-play{width:100%}
