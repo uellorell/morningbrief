@@ -1278,8 +1278,8 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;color:#2a2a2a}
 @media(max-width:767px){
   .container{width:min(var(--container),calc(100% - 40px))}
   .hero-grid{grid-template-columns:1fr;gap:38px;min-height:0;padding:64px 0 70px}
-  .hero h1{font-size:40px;line-height:1.18}
-  .hero-price strong{font-size:28px;line-height:42px;letter-spacing:-.84px}
+  .hero h1{font-size:38px;line-height:1.18}
+  .hero-price strong{font-size:32px;line-height:42px;letter-spacing:-.96px}
   .hero-action{width:100%}
   .hero .experience-play{width:100%}
   .hero-visual{width:min(100%,520px);justify-self:center}
