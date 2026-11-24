@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261104-responsive-hero-title">
+  <link rel="stylesheet" href="styles.css?v=20261124-white-timestamps-b">
+  <script src="player.js?v=20261106-embedded-player" defer></script>
 </head>
 <body>
   <main id="top">
@@ -21,7 +22,7 @@
             <p class="hero-lead">Jadikan MorningBrief kebiasaan positif setiap pagi. Luangkan beberapa menit untuk memahami isu yang membentuk hari Anda.</p>
             <p class="hero-price"><strong>Rp29.000</strong><del>Rp59.000</del></p>
             <div class="hero-action">
-              <a class="button experience-play" href="https://mediopods.kompas.com/program/34632ce6a36270b6d6cc2da335a98500" target="_blank" rel="noopener noreferrer"><img class="hero-play-icon" src="hero-play.svg" alt="" aria-hidden="true">Putar MorningBrief</a>
+              <a class="button hero-subscribe" href="https://plus.kompas.com/group/kompas-max" target="_blank" rel="noopener noreferrer">Berlangganan KOMPAS.com PLUS</a>
             </div>
           </div>
         </div>
@@ -36,6 +37,32 @@
         <div class="challenge-intro">
           <h2 id="challenge-title">Tak perlu membaca semuanya untuk tahu yang terpenting.</h2>
           <p>Setiap hari ada begitu banyak informasi untuk diikuti. MorningBrief membantu Anda mendapatkan inti berita penting tanpa harus membuka dan memilah banyak artikel.</p>
+        </div>
+        <div class="morning-player" data-audio-player>
+          <div class="player-main">
+            <div class="player-cover-wrap">
+              <img class="player-cover" src="https://assets-studiohub.kompas.com/audio/73f614858444241bddf143/20c7844fc9e0b6449921ab1278474244/20c7844fc9e0b6449921ab1278474244_955.jpg" alt="Sampul episode MorningBrief Kasus Penyadapan Presiden Prabowo" loading="lazy" decoding="async">
+            </div>
+            <div class="player-details">
+              <div class="player-meta"><span>MorningBrief</span><time datetime="2026-11-05">5 November 2026</time></div>
+              <h3>Kasus Penyadapan Presiden Prabowo</h3>
+              <p>Cuplikan rangkuman isu penting yang disiapkan redaksi KOMPAS.com untuk memulai hari Anda.</p>
+              <audio id="morningbrief-audio" preload="metadata">
+                <source src="https://assets-studiohub.kompas.com/audio/73f614858444241bddf143/20c7844fc9e0b6449921ab1278474244/teaser_20c7844fc9e0b6449921ab1278474244.mp3" type="audio/mpeg">
+              </audio>
+              <div class="player-progress-row">
+                <span class="player-time" data-current-time>00:00</span>
+                <input class="player-progress" data-progress type="range" min="0" max="100" value="0" step="0.1" aria-label="Posisi audio">
+                <span class="player-time" data-duration>00:00</span>
+              </div>
+              <div class="player-controls">
+                <button class="player-skip" type="button" data-skip="-15" aria-label="Mundur 15 detik"><svg class="player-skip-arrow" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 17.5a11 11 0 1 1 1.6 11.8"/><path d="M12 10v7.5h7.5"/></svg><small>15</small></button>
+                <button class="player-toggle" type="button" data-player-toggle aria-label="Putar MorningBrief"><span class="player-play-symbol" aria-hidden="true"></span></button>
+                <button class="player-skip player-skip-forward" type="button" data-skip="15" aria-label="Maju 15 detik"><svg class="player-skip-arrow" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 17.5a11 11 0 1 1 1.6 11.8"/><path d="M12 10v7.5h7.5"/></svg><small>15</small></button>
+              </div>
+              <p class="player-status" data-player-status aria-live="polite">Tekan play untuk mendengarkan cuplikan.</p>
+            </div>
+          </div>
         </div>
         <div class="challenge-list">
           <article class="challenge-item">
@@ -67,7 +94,7 @@
             </div>
             <div class="feature">
               <span class="feature-icon" aria-hidden="true"><img src="feature-seal-check.svg" alt=""></span>
-              <div><h3>Ringkasan Berita Harian</h3><p>Dipilih dan disusun oleh tim redaksi KOMPAS.com.</p></div>
+              <div><h3>Kurasi Redaksi</h3><p>Dipilih dan disusun oleh tim redaksi KOMPAS.com.</p></div>
             </div>
           </div>
         </div>
